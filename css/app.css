@@ -126,6 +126,12 @@ footer li, p {
     
 }
 
-    
+ @media screen and 
+    (max-width: 992px){
+        .boitenavigation .listeliens{
+            position: relative;
+        }
+        
+    }
 
 
