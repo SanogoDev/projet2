@@ -1,37 +1,131 @@
+
+/*CSS DU CORPS DE LA PAGE*/
 *{
-    
+  
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     transition: all 0.3s;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*FIN CSS DE LA PARTIE DU CORPS*/
+
+/* CSS DE LA PARTIE DU MENU NAV*/
+
+.boitenavigation .listeliens{
+    background-color: #ff7f50;
+    padding: .5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    box-shadow: 0 0 0 .1rem #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    border-radius: 50px;
+    
 }
 
-.containerimg{
-    background-color:white;
+.boitenavigation .listeliens li{
+    width: 150px;
+    height: 40px;
+    font-size: 1.5rem;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: #eeeeee;
+    border-radius: .7rem;
+    box-shadow: 0 .1rem .2rem white;
+   
+}
+
+.listeliens li a{
+    color: #666666;
+    text-decoration: none;
+}
+
+.boitenavigation .listeliens li:active{
+    
+    background-color:blueviolet;
+}
+
+/*FN CSS DE LA PARTIE NAV*/
+
+/*CSS DE LA PARTIE SECTION*/
+.container{
+    background-color:#eeeeee;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     border-radius: .3rem;
+    padding-top: 13%;
+    padding-bottom:10%;
+    
+    
 
 }
 
-.containerimg .image{
+.container .hrefimages{
     width: 350px;
     height: 250px;
     overflow: hidden;
     border: 8px solid white;
     margin-top: 20px;
-    box-shadow: 0 .1rem .4rem gray;
+    box-shadow: 0 .5rem .5rem gray;
+    border-radius: 15px;
 }
 
-.containerimg .image img{
+.container .hrefimages img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     
 }
-.containerimg .image img:hover{
+.container .hrefimages img:hover{
    transform: scale(1.5);
     
 }
+/*FN DE LA PARTIE SECTION*/
+
+
+/*CSS DU FOOTER*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000c5;
+    flex-wrap: wrap;
+    border-top: blueviolet solid 2px;
+    
+}
+footer div{
+    
+    max-width: 22rem;
+    min-width:22rem;
+    padding: 2rem;    
+}
+footer h3{
+    text-align: left;
+    color: coral;
+}
+
+footer hr{
+    background: linear-gradient(to right, blueviolet, coral);
+    padding: 0.22rem;
+    padding: 2px;
+    margin: 15px 0;
+}
+footer li, p {
+    color: #ffffff;
+    
+}
+
+    
+
+
